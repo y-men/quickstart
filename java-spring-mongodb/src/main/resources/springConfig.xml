@@ -1,0 +1,24 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+	xsi:schemaLocation="http://www.springframework.org/schema/context
+          http://www.springframework.org/schema/context/spring-context-3.0.xsd
+          http://www.springframework.org/schema/data/mongo
+          http://www.springframework.org/schema/data/mongo/spring-mongo-1.0.xsd
+          http://www.springframework.org/schema/beans
+          http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<mongo:mongo 
+	<!-- 
+	 "mongodb://admin:admin@cluster0-shard-00-00-x3a8q.mongodb.net:27017,cluster0-shard-00-01-x3a8q.mongodb.net:27017,cluster0-shard-00-02-x3a8q.mongodb.net:27017/<DATABASE>?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin"
+	-->
+	host="mongodb://admin:admin@cluster0-shard-00-00-x3a8q.mongodb.net:27017,cluster0-shard-00-01-x3a8q.mongodb.net:27017,cluster0-shard-00-02-x3a8q.mongodb.net:27017/<DATABASE>?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin" 
+	port="27017" />
+	<mongo:db-factory dbname="qe" />
+
+	<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+		<constructor-arg name="mongoDbFactory" ref="mongoDbFactory" />
+	</bean>
+
+</beans>
