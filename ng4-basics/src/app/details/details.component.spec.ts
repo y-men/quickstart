@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { DetailsComponent } from './details.component';
+import { DatePipe } from '@angular/common';
+
 
 describe('DetailsComponent', () => {
   let component: DetailsComponent;
