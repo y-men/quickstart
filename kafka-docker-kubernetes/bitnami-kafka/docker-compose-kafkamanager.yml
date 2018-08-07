@@ -1,0 +1,14 @@
+
+version: '3'
+
+services:
+  kafka-manager:
+    image: sheepkiller/kafka-manager
+    restart: always
+    hostname: kafka-manager
+    ports:
+    - "9000:9000"
+#    depends_on:
+#    - z
+    environment:
+    - ZK_HOSTS=zookeeper:2181
