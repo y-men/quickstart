@@ -13,6 +13,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class JavaSpringKafkaApplicationTests {
 
+    //TODO Use kafka embedded
+
     @Autowired
     private KafkaTemplate kafkaTemplate;
 
