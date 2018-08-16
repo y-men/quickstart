@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="java-spring-console" />
+        <module name="java-spring-kafka" />
+        <module name="java.lib.maven.quickstart" />
+        <module name="spring5-recipe-app" />
+        <module name="spring5webapp" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="java-spring-console" target="1.8" />
+      <module name="java-spring-kafka" target="10" />
+      <module name="java.lib.maven.quickstart" target="1.7" />
+      <module name="spring5-recipe-app" target="1.8" />
+      <module name="spring5webapp" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
