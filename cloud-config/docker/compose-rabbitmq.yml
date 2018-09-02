@@ -1,0 +1,16 @@
+#Environment for rabbit mq and mysql project
+
+version: '2'
+networks:
+  app-tier:
+    driver: bridge
+
+services:
+  rabbitmq:
+    image: 'bitnami/rabbitmq:latest'
+    networks:
+      - app-tier
+    ports:
+#      EXPOSE 4369 5672 25672 15672
+      - "5672:5672"
+

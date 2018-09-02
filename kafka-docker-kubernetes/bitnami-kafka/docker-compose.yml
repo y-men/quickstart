@@ -10,16 +10,12 @@ services:
     - ALLOW_ANONYMOUS_LOGIN=yes
   kafka:
    image: 'bitnami/kafka:latest'
-#   hostname: qkafka
-  hostname: q12345678
+   hostname: qkafka
    ports:
     - '9092:9092'
    environment:
     - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
     - ALLOW_PLAINTEXT_LISTENER=yes
    volumes:
-    - C:\DEV\quickstart\kafka-docker-kubernetes\bitnami-kafka\shared:/shared
-    - C:\DEV\quickstart\kafka-docker-kubernetes\bitnami-kafka\shared\server.properties:/opt/bitnami/kafka/conf/server.properties
-     # Properties for editing
-     # TODO FInd how ot reference the project location here...
-#- C:\DEV\quickstart\kafka-docker-kubernetes\server.properties:/opt/bitnami/kafka/conf/server.properties
+    - /home/yaniv/dev/quickstart/kafka-docker-kubernetes/bitnami-kafka/shared:/shared
+    - /home/yaniv/dev/quickstart/kafka-docker-kubernetes/bitnami-kafka/shared/server.properties:/opt/bitnami/kafka/conf/server.properties

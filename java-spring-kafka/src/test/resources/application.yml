@@ -1,0 +1,5 @@
+kafka:
+#  Define brokers for the embedded kafka test
+  bootstrap-servers: ${spring.embedded.kafka.brokers}
+  topic:
+    receiver: q.t

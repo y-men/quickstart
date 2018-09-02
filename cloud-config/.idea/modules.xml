@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/cloud-config.iml" filepath="$PROJECT_DIR$/.idea/cloud-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../spring-cloud-configserver/config.iml" filepath="$PROJECT_DIR$/../spring-cloud-configserver/config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../spring-cloud-configserver/config-server.iml" filepath="$PROJECT_DIR$/../spring-cloud-configserver/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../demo/demo.iml" filepath="$PROJECT_DIR$/../demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo2/demo2.iml" filepath="$PROJECT_DIR$/demo2/demo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../demo3/demo3.iml" filepath="$PROJECT_DIR$/../demo3/demo3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../demo4/demo4.iml" filepath="$PROJECT_DIR$/../demo4/demo4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../spring-cloud-client-lucky/lucky.iml" filepath="$PROJECT_DIR$/../spring-cloud-client-lucky/lucky.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../spring-cloud-client-luke/luke.iml" filepath="$PROJECT_DIR$/../spring-cloud-client-luke/luke.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../spring-cloud-rest-cient/spring-cloud-rest-cient.iml" filepath="$PROJECT_DIR$/../spring-cloud-rest-cient/spring-cloud-rest-cient.iml" />
+    </modules>
+  </component>
+</project>
