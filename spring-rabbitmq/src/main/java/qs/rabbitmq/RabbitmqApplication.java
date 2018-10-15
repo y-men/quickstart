@@ -14,6 +14,7 @@ import org.springframework.context.annotation.Bean;
 import qs.rabbitmq.listener.ProductMessageListener;
 
 @SpringBootApplication
+@
 public class RabbitmqApplication {
 
     // Configuration ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
